@@ -1,0 +1,223 @@
+@charset "utf-8";
+body {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size:11px;
+	background-image: url(../img/background.jpg);
+	background-repeat: repeat-x;
+	background-color: #fbfbfb;
+	padding:15px 0px 20px 0px;
+	color:#3a3a3a;
+}
+a{color:#004990; text-decoration:none;}
+a:hover{ text-decoration:underline;}
+img{border:none;}
+*{margin:0px; padding:0px;}
+h1{font-size:14px; font-weight:normal; background-image:url(../img/h1dot.gif); background-repeat:no-repeat; background-position:left; padding:11px 0px 12px 15px; margin:0px 0px 0px 14px; position:relative;}
+h2{
+	font-size:14px;
+	font-weight:normal;
+	background-image:url(../img/h1dot.gif);
+	background-repeat:no-repeat;
+	background-position:left;
+	padding:11px 0px 12px 15px;
+	margin:0px 0px 0px 14px;
+	position:relative;
+	text-align: left;
+}
+
+#main{width:958px; margin:0px auto 0px auto; background-color:#FFFFFF;}
+#main:after{content:".";
+
+			visibility:hidden;
+
+			clear:both;
+
+			height:0;
+
+			display:block;
+
+}
+
+#leftcol{ background-image:url(../img/leftbackground.jpg); background-repeat: repeat-x; width:237px;float:left;}
+#subleftcol{ background-image:url(../img/subleftcol.jpg); background-repeat: repeat-x; width:237px;float:left;}
+#leftcol p{padding:0px 0px 3px 0px;}
+#leftcol .wiecej{padding:3px 10px 6px 0px;}
+#logo{padding:38px 0px 35px 78px;}
+#rightcol{width:721px; float:right;}
+#menu{width:553px; height:36px; overflow:hidden; background-image:url(../img/menuoff.gif); background-repeat:no-repeat;float:left;}
+
+#menu a.firma{width:59px; height:36px; display:block; overflow:hidden;float:left;}
+#menu a.firma:hover{width:59px; height:36px; display:block; background-image:url(../img/firmaon.gif); background-repeat:no-repeat; overflow:hidden;}
+#menu a.firmaon{float:left;width:59px; height:36px; display:block; background-image:url(../img/firmaon.gif); background-repeat:no-repeat; overflow:hidden;}
+
+#menu a.produkty{width:74px; height:36px; display:block; overflow:hidden;float:left;}
+#menu a.produkty:hover{width:74px; height:36px; display:block; background-image:url(../img/produktyon.gif); background-repeat:no-repeat; overflow:hidden;}
+#menu a.produktyon{float:left;width:74px; height:36px; display:block; background-image:url(../img/produktyon.gif); background-repeat:no-repeat; overflow:hidden;}
+
+#menu a.materialy{width:79px; height:36px; display:block; overflow:hidden;float:left;}
+#menu a.materialy:hover{width:79px; height:36px; display:block; background-image:url(../img/materialyon.gif); background-repeat:no-repeat; overflow:hidden;}
+#menu a.materialyon{float:left;width:79px; height:36px; display:block; background-image:url(../img/materialyon.gif); background-repeat:no-repeat; overflow:hidden;}
+
+#menu a.rozmiary{width:75px; height:36px; display:block; overflow:hidden;float:left;}
+#menu a.rozmiary:hover{width:75px; height:36px; display:block; background-image:url(../img/rozmiaryon.gif); background-repeat:no-repeat; overflow:hidden;}
+#menu a.rozmiaryon{float:left;width:75px; height:36px; display:block; background-image:url(../img/rozmiaryon.gif); background-repeat:no-repeat; overflow:hidden;}
+
+#menu a.funkcjonalnosc{width:121px; height:36px; display:block; overflow:hidden;float:left;}
+#menu a.funkcjonalnosc:hover{width:121px; height:36px; display:block; background-image:url(../img/funkcjonalnoscon.gif); background-repeat:no-repeat; overflow:hidden;}
+#menu a.funkcjonalnoscon{float:left;width:121px; height:36px; display:block; background-image:url(../img/funkcjonalnoscon.gif); background-repeat:no-repeat; overflow:hidden;}
+
+
+#menu a.warunki{width:70px; height:36px; display:block; overflow:hidden;float:left;}
+#menu a.warunki:hover{width:70px; height:36px; display:block; background-image:url(../img/warunkion.gif); background-repeat:no-repeat; overflow:hidden;}
+#menu a.warunkion{float:left;width:70px; height:36px; display:block; background-image:url(../img/warunkion.gif); background-repeat:no-repeat; overflow:hidden;}
+
+#menu a.kontakt{width:75px; height:36px; display:block; overflow:hidden;float:left;}
+#menu a.kontakt:hover{width:75px; height:36px; display:block; background-image:url(../img/kontakton.gif); background-repeat:no-repeat; overflow:hidden;}
+#menu a.kontakton{width:75px; height:36px; display:block; background-image:url(../img/kontakton.gif); background-repeat:no-repeat; overflow:hidden;float:left;}
+
+
+#menu a span{display:none;}
+#lang{float:right;height:36px;width:168px;overflow:hidden;}
+
+.blueline{background-color:#004990;width:721px; height:3px; overflow:hidden; clear:both;}
+.bluevertical{width:4px; height:413px; background-color:#004990;float:left; overflow:hidden;}
+.subbluevertical{width:4px; height:60px; background-color:#004990;float:left; overflow:hidden;}
+#flash{float:left;width:549px; height:413px;overflow:hidden;}
+#subflash{float:left;width:549px; height:226px;overflow:hidden;}
+#mainsearchback{height:413px; float:left;}
+#searchback{ background-image:url(../img/leftbackground.jpg); background-repeat:repeat-x; width:715px;height:60px;float:left;}
+#search{ overflow:hidden; padding:0px 0px 0px 0px;}
+#search form{padding:0px 0px 0px 16px; margin:0px; }
+#search form label{clear:both;display:block; font-size:10px; color:#333333; padding:10px 0px 2px 0px;}
+#search form input{
+	width:135px;
+	height:14px;
+	padding:2px;
+	font-size:10px;
+	background-color:#FFFFFF;
+	border: 1px solid #e9e9e9;
+}
+#search form select{width:142px; padding:2px; font-size:10px;border: 1px solid #e9e9e9;height:20px;}
+#search form .send{display:block; background-image:url(../img/szukajbut.gif); border:none;  width:83px; height:19px; cursor:pointer; margin:0px 0px 0px 0px;}
+#zamow{padding:12px 0px 0px 18px;}
+#sciagnij{padding:23px 0px 0px 18px;}
+#contentframe{background-image: url(../img/underbackground.jpg); background-repeat:repeat-x; min-height:220px;}
+
+.firmatit{width:237px; height:79px; background-image:url(../img/firmaleft.jpg); background-repeat:no-repeat;}
+.produktytit{width:237px; height:79px; background-image:url(../img/produktyleft.jpg); background-repeat:no-repeat;}
+.odziezroboczatit{width:237px; height:79px; background-image:url(../img/odziezroboczaleft.jpg); background-repeat:no-repeat;}
+.miejscepracytit{width:237px; height:79px; background-image:url(../img/miejscepracyleft.jpg); background-repeat:no-repeat;}
+.odziezdlagastronomitit{width:237px; height:79px; background-image:url(../img/odziezdlagastronomileft.jpg); background-repeat:no-repeat;}
+.odziezdlagastronomitit a.subtitle{font-size:14px;padding:18px 0px 0px 90px; display:block;}
+.materialytit{width:237px; height:79px; background-image:url(../img/materialyleft.jpg); background-repeat:no-repeat;}
+.funkcjonalnosctit{width:237px; height:79px; background-image:url(../img/funkcjonalnoscleft.jpg); background-repeat:no-repeat;}
+.rozmiarytit{width:237px; height:79px; background-image:url(../img/rozmiarleft.jpg); background-repeat:no-repeat;}
+.warunkitit{width:237px; height:79px; background-image:url(../img/warunkileft.jpg); background-repeat:no-repeat;}
+.kontakttit{width:237px; height:79px; background-image:url(../img/kontaktleft.jpg); background-repeat:no-repeat;}
+
+a.subtitle{font-size:14px; padding:28px 0px 0px 90px; display:block;}
+
+.odziezrobocza{width:237px; height:79px; background-image:url(../img/odziezrobocza.jpg); background-repeat:no-repeat;}
+.odziezrobocza a{font-size:14px; padding:28px 0px 0px 90px; display:block;}
+.odziezdlagastronomi{width:237px; height:79px; background-image:url(../img/odziezdlagastronomi.jpg); background-repeat:no-repeat;}
+.odziezdlagastronomi a{font-size:14px;padding:18px 0px 0px 90px; display:block;}
+.miejscepracy{width:237px; height:79px; background-image:url(../img/miejscepracy.jpg); background-repeat:no-repeat;}
+.miejscepracy a{font-size:14px;padding:28px 0px 0px 90px; display:block;}
+.ofirmie{width:256px; float:left;}
+.oferta{float:left; width:465px;}
+.oferta .content{padding:0px 0px 0px 14px;}
+.oferta .produktframe{width:148px; height:167px;float:left;}
+#footer{width:958px; margin:0px auto 0px auto; clear:both;}
+#footer .footerline{width:958px; height:22px; overflow:hidden; background-image:url(../img/footer.gif); background-position:top; background-repeat:no-repeat;}
+#footer .strgl{float:left;width:110px;padding:0px 0px 0px 14px;}
+#footer .strgl a{background-image:url(../img/icohome.gif); background-repeat:no-repeat; background-position:center left; padding:0px 0px 1px 18px;}
+#footer .menu{float:left; text-align:center; width:735px; padding:0px 0px 0px 20px;}
+#footer .menu a{background-image:url(../img/footerdot.gif); background-repeat:no-repeat;background-position:center left;  padding:0px 10px 1px 8px;}
+#footer .top{float:right; width:65px; padding:0px 14px 0px 0px; }
+#footer .top a{background-image:url(../img/icotop.gif);background-repeat:no-repeat;  background-position:right center;padding:0px 15px 1px 0px;}
+.content{padding:0px 12px 0px 14px;}
+.content h1{font-size:16px; font-weight:normal; padding:0px 0px 10px 0px; margin:0px; background-image:none;}
+.content h2{font-size:15px; font-weight:normal; padding:0px 0px 10px 0px;margin:0px;background-image:none;}
+.content h3{font-size:14px; font-weight:normal; padding:0px 0px 10px 0px;margin:0px;background-image:none;}
+.content h4{font-size:13px; font-weight:bold; padding:0px 0px 10px 0px;margin:0px;background-image:none;}
+.content h5{font-size:12px; font-weight:bold; padding:0px 0px 10px 0px;margin:0px;background-image:none;}
+.content h6{font-size:11px; font-weight:bold; padding:0px 0px 10px 0px;margin:0px;background-image:none;}
+.content p{
+	line-height: 17px; padding:0px 0px 10px 0px;
+}
+.content .wiecej{padding:0px 10px 3px 0px; display:block; float:right; margin:0px 5px 10px 0px; background-image:url(../img/strzalkipodwojne.gif); background-repeat:no-repeat; background-position:right center;}
+.content .data{font-size:10px; color:#646464;display:block;position:relative; top:5px;}
+.content ul{padding:0px 0px 5px 15px;}
+.content ol{padding:0px 0px 5px 24px;}
+.content li{padding:0px 0px 5px 0px;}
+.clr {clear:both;}
+.space {clear:both; height:5px; overflow:hidden;}
+.produktframe{width:138px; height:175px;float:left;}
+.opis{background-image:url(../img/produktopis.gif); background-repeat:no-repeat;width:133px;height:27px; overflow:hidden;}
+.opis a{width:128px; padding:7px 0px 5px 5px; overflow:hidden;display:block;height:7px; font-size:10px;}
+.ramka{width:133px;background-repeat:no-repeat; background-position:center center; margin:0px 0px 3px 0px;}
+.submenu{padding:0px 0px 0px 3px; margin:0px 0px 0px 0px;}
+.submenu li{background-image:url(../img/lidot.gif); background-repeat:no-repeat; background-position:left center; padding:2px 0px 3px 10px; list-style:none; font-weight:bold;}
+.submenu li.sub{margin:0px 0px 0px 10px; font-weight:normal;}
+
+.harvestlogo{float:left; padding:0px 10px 10px 14px;}
+.printerlogo{float:left; padding:0px 0px 10px 7px;}
+.sagaformlogo{float:left; padding:0px 10px 10px 32px;}
+.dvicelogo{float:left; padding:10px 10px 10px 14px;}
+
+#stronicowanie{padding:10px 7px 10px 14px; clear:both; height:20px;}
+#stronicowanie .poprzednia{width:100px; float:left;}
+#stronicowanie .poprzednia a{background-image:url(../img/poprzedniaback.gif); width:88px; height:19px; padding:2px 0px 0px 18px;display:block;overflow:hidden; background-repeat: no-repeat;}
+#stronicowanie .strony{width:490px; float:left;padding:3px 0px 5px 0px; text-align:center;}
+#stronicowanie .strony a{padding:2px 4px 2px 4px; border: 1px solid #e6e6e6; font-weight:bold;margin:0px 10px 0px 0px;}
+#stronicowanie .strony a.off{
+	padding:2px 4px 2px 4px;
+	border: 1px solid #e6e6e6;
+	font-weight:normal;
+	margin:0px 10px 0px 0px;
+	background-color: #eeeeee;
+}
+#stronicowanie .powrot{width:200px; float:left; position:relative; left:193px;}
+#stronicowanie .powrot a{background-image: url(../img/powrotdolisty.gif); width:115px; height:18px; display:block;overflow:hidden; background-repeat:no-repeat; padding:2px 0px 0px 15px;}
+#stronicowanie .nastepna{float:right; width:100px;}
+#stronicowanie .nastepna a{background-image:url(../img/nastepnaback.gif); width:88px; height:19px; padding:2px 0px 0px 10px;display:block;overflow:hidden; float:right; background-repeat:no-repeat;}
+.zoomleft{width:413px;float:left; position:relative; left:13px;}
+.zoomleft .bigproduktframe{width:413px; height:378px; background-repeat:no-repeat; overflow:hidden; background-position:center center;}
+.wariantramka{float:left;margin:0px 3px 3px 0px;width:100px; height:102px;background-repeat:no-repeat; overflow:hidden; background-position:center center;}
+.zoomleft h2{position:relative; left:-13px;}
+.zoomright{float:right; width:295px;}
+.zoomright .opisframe{min-height:378px;}
+.zoomright h3{padding:0px 0px 0px 0px; font-size:16px;}
+.zoomright .materialyramka{border:1px solid #e6e6e6; width:260px;  position:relative; left:13px; padding:0px; min-height:100px;}
+.zoomright .materialyramka a img{padding:12px 0px 0px 10px;}
+.blueshortline{height:3px; overflow:hidden;background-color:#004990;margin:7px 0px 7px 0px; }
+.polecamy{clear:both; padding:0px 0px 0px 14px;}
+.polecamyframe{width:110px; float:left; overflow:hidden;}
+.polecamyframe .wariantramka{float:left;margin:0px 3px 3px 0px;width:100px; height:102px;background-repeat:no-repeat; overflow:hidden; background-position:center center;}
+.polecamyframe .opis{background-image:url(../img/opiswariant.gif); background-repeat:no-repeat; width:100px; height:22px; font-size:10px;float:left;}
+.polecamyframe .opis a{padding:4px 0px 0px 5px;display:block; width:80px; height:12px; overflow:hidden;}
+.leftkontakt{float:left; width:300px;}
+.rightkontakt{float:left; width:300px;}
+
+.content input {font-family: Verdana, Arial, Helvetica, sans-serif;font-size: 12px;color: #2C2C2C;background-color:#FFFFFF;padding:2px;border: 1px solid #E5E5E5; }
+
+.content textarea {font-family: Verdana, Arial, Helvetica, sans-serif;font-size: 12px;color: #2C2C2C;	background-color:#FFFFFF;	padding:2px;	border: 1px solid #E5E5E5;}	
+
+.content .wyczyscnp{width:86px; height:24px;background-color:#FFFFFF;border:none;padding:4px;cursor:pointer;}
+
+.content .wyslijnp{width:86px; height:24px;background-color:#FFFFFF;border:none;padding:4px;cursor:pointer;}
+.produkt{padding:0px 6px 0px 0px;}
+
+.katalog { text-align: center;}
+
+div#cookie-div {
+	background-color: #544A42 !important;
+	color: #999 !important;
+	font-size: 11px;
+	padding: 8px 0px !important;
+	margin: 0px auto;
+	width: 980px;
+}
+div#cookie-div a {
+		font-size: 11px;
+}

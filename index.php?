@@ -1,0 +1,90 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Odzież robocza</title>
+<meta name="description" content="" />
+<meta name="keywords" content="" />
+<link rel="canonical" href="http://www.projob.pl/index.php?" />
+<meta name="author" content="mateusz@psuja.com" />
+<meta name="author" content="jedrzej@musial.pl" />
+<link href="css/minikat.css" rel="stylesheet" type="text/css" />
+<script src="js/swfobject.js" language="javascript" type="text/javascript"></script>
+<script src="js/projob.js" language="javascript" type="text/javascript"></script>
+<script src="js/form.js" language="javascript" type="text/javascript"></script>
+</head>
+<body onload="formreset();">
+<a name="top" id="top"></a>
+<div id="main">
+ <div id="subleftcol">
+	<h2>Kategorie</h2>
+	<div class="content">
+		<ul class="submenu">
+			<li><a href="index.php?strona=produkty_kat1" title="Odzież robocza">Odzież robocza</a></li>
+			<li><a href="index.php?strona=produkty_kat2" title="Odzież dla gastronomi">Odzież dla gastronomi</a></li>
+			<li><a href="index.php?strona=produkty_kat3" title="Miejsce pracy">Miejsce pracy</a></li>
+		</ul> 
+	</div>
+	<div class="katalog">
+	<h2>Pobierz katalog</h2>
+	<div><a href="katalog/ProJob_ss2012.pdf" target="_blank" title="Katalog Projob"><img src="./img/katalog.jpg" alt="pobierz katalog" /></a></div>
+	<p><a href="katalog/ProJob_ss2012.pdf" target="_blank" title="Katalog Projob">Projob 2012 (69,6 MB)</a></p>
+</div>	<!-- content end -->
+</div>
+<!-- subleftcol end -->  <div id="rightcol">
+    <div class="subbluevertical"></div>
+    <script>
+function changegrupa(numer,razem) {
+	for (var i = 1; i <= razem ; i++) {
+		element = document.getElementById('kategorie_'+i);
+		element.style.display = 'none';
+		element = document.getElementById('kategorie_wszystkie');
+		element.style.display = 'none';
+	}
+	element = document.getElementById('kategorie_'+numer);
+	element.style.display = 'block';
+}
+
+function ustawkat(numer) {
+	element = document.getElementById('kategorie_wszystkie');
+	element.style.display = 'none';
+	element = document.getElementById('kategorie_'+numer);
+	element.style.display = 'block';
+}
+</script>
+<div id="searchback">
+  <div id="search">
+	<form method="post" action="index.php?strona=produkty&amp;action=szukaj" enctype="multipart/form-data" name="searchform" id="searchform">
+	 <div style="float:left; width:120px;"><label for="nazwa_szuk">NAZWA LUB ID</label>
+	  <input type="text" name="nazwa_szuk" id="nazwa_szuk"  value="" style="width:100px; height:16px;" /></div>
+	  <div style="float:left; width:150px;"><label for="grupa">GRUPA</label><select size="1" name="grupa" onchange="javascript:void(0); changegrupa(this.value,5);"><option value="wszystkie">wszystkie</option><option value="1">Odzież robocza i ochronna</option><option value="2">Odzież dla gastronomii</option><option value="3">Miejsce pracy</option><option value="4">Obuwie i rękawice robocze</option><option value="5">Akcesoria BHP</option></select>
+	  </div>
+
+	  <div style="float:left; width:150px;"><label for="kategoria">KATEGORIA</label><div id="kategorie_wszystkie" style="display: block;"><select size="1" name="kategoria_0">
+		<option value=\"0\">wybierz grupę</option></select></div><div id="kategorie_1" style="display: none;"><select size="1" name="kategoria_1"><option value="wszystkie">wszystkie</option><option value="6">Bielizna</option><option value="2">Bluzy</option><option value="15">Czapki</option><option value="7">Kamizelki</option><option value="1">Kombinezony</option><option value="32">Komplety</option><option value="12">Koszule</option><option value="8">Kurtki</option><option value="33">Odzież damska</option><option value="5">Odzież funkcjonalna</option><option value="31">Ogrodniczki</option><option value="14">Ostrzegawcza, odblaskowa</option><option value="9">Polary</option><option value="11">Polo koszulki</option><option value="34">ProGeneration</option><option value="13">Przeciwdeszczowa</option><option value="37">Spawalnicza i chemiczna</option><option value="3">Spodnie</option><option value="10">T-shirty</option></select></div><div id="kategorie_2" style="display: none;"><select size="1" name="kategoria_2"><option value="wszystkie">wszystkie</option><option value="19">Akcesoria</option><option value="21">Czapki</option><option value="18">Kurtki kucharskie</option><option value="17">Spodnie kucharskie</option><option value="16">Zapaski / fartuchy</option></select></div><div id="kategorie_3" style="display: none;"><select size="1" name="kategoria_3"><option value="wszystkie">wszystkie</option><option value="28">Akcesoria</option><option value="23">Budowa, instalacje</option><option value="29">Malarze, wykończenia wnętrz</option><option value="25">Odzież dla gastronomi</option><option value="24">Odzież ochronna, ostrzegawcza, odblaskowa</option><option value="27">Odzież profilowana, promocyjna</option><option value="30">Prace spawalnicze, mechanicy</option><option value="22">Transport, serwis, usługi</option></select></div><div id="kategorie_4" style="display: none;"><select size="1" name="kategoria_4"><option value="wszystkie">wszystkie</option><option value="35">Obuwie ochronne</option><option value="36">Rękawice robocze</option></select></div><div id="kategorie_5" style="display: none;"><select size="1" name="kategoria_5"><option value="wszystkie">wszystkie</option><option value="39">Inbagi</option><option value="42">Ochraniacze kolan</option><option value="40">Paski i szelki</option><option value="43">Pozostałe</option><option value="41">Ręczniki</option></select></div></div>
+
+	  <div style="float:left; width:150px;"><label for="kolor">KOLOR</label>
+	  <select name="kolor" id="kolor"><option selected="selected">wszystkie</option><option value="29">100 biały</option><option value="41">105 Eggshell</option><option value="57">110 popielaty</option><option value="48">119 miodowy</option><option value="43">120 szary melanż</option><option value="40">131 szary melanż</option><option value="63">132 jasnoszary</option><option value="38">150 piaskowy</option><option value="34">170 piaskowy</option><option value="32">173 piaskowy</option><option value="65">174 piaskowy</option><option value="64">186 kamienia</option><option value="52">208 cytrynowy</option><option value="54">210 żółty</option><option value="59">216 żółty</option><option value="53">303 pomarańczowy</option><option value="51">305 jasny pomarańczowy</option><option value="28">400 czerwony</option><option value="55">473 malinowy</option><option value="47">475 jasnoróżowy</option><option value="46">481 bordowy</option><option value="30">510 jasnoniebieski</option><option value="61">511 jasnoniebieski</option><option value="45">516 błękitny</option><option value="50">523 nafty</option><option value="44">530 niebieski</option><option value="35">536 niebieski</option><option value="58">590 granatowy</option><option value="27">600 granatowy</option><option value="62">706 zielony</option><option value="39">707 butelkowa zieleń</option><option value="56">720 zielony</option><option value="49">730 limetki</option><option value="60">800 kreci</option><option value="33">801 brązowy</option><option value="37">840 cappuccino</option><option value="26">900 czarny</option><option value="66">901 czarny</option><option value="36">904 ciemnoszary</option><option value="42">916 szary</option><option value="11">biały 00</option><option value="10">brązowy 77</option><option value="13">ciemnoszary 96</option><option value="18">city camo 02</option><option value="6">czarny 99</option><option value="1">czerwony 34</option><option value="12">grafitowy 94</option><option value="8">granatowy 58</option><option value="20">jasnoszary 93</option><option value="14">khaki 82</option><option value="16">leśna zieleń 66</option><option value="15">niebieski 55</option><option value="24">niebieski jeans 57</option><option value="4">niebieski projob 56</option><option value="19">pepita 01</option><option value="17">pomarańczowy 17</option><option value="31">popielaty 120</option><option value="21">popielaty 92</option><option value="7">szary 83</option><option value="9">szary 98</option><option value="22">szary melanż 95</option><option value="25">wino 4800</option><option value="2">żółty 10</option></select>
+	  </div>
+	 <div style="float:left; width:120px; position:relative; top:25px; left:0px;"> <input type="submit" value="" class="send" /></div>
+	</form>
+  </div>
+  <!-- search end-->
+</div>
+<!-- mainsearchback end-->    <div class="blueline"></div>
+   <div id="contentframe"><h1>Produkty</h1><div class="content"><p>Projob to ubrania kt&oacute;re pomagają podołać ciężkiej pracy. Zostały stworzone z dbałością o każdy element, o wygodę, funkcjonalność i estetykę. Dzięki zastosowaniu nowych materiał&oacute;w i nowoczesnej technologii, ubrania Projob są ciągle udoskonalane bowiem nowe okoliczności narzucają nowe wyzwania.</p>
+<p><a title="Odzież robocza" class="produkt" href="index.php?strona=produkty_kat1"><img height="179" width="226" alt="Odzież robocza" src="img/produkty_odziezrobocza.jpg" /></a><a title="Odzież dla gastronomi" class="produkt" href="index.php?strona=produkty_kat2"><img height="179" width="226" alt="Odzież dla gastronomi" src="img/produkty_odziezdlagastronomi.jpg" /></a><a title="Miejsce pracy" href="index.php?strona=produkty_kat3"><img height="179" width="226" alt="Miejsce pracy" src="img/produkty_miejscepracy.jpg" /></a></p>
+<p>Ze względu na wykonywaną prace potrzebujemy specjalistycznych rozwiązań w odzieży kt&oacute;ra nosimy w pracy. Ubrania Projob nam ich dostarczają.</p></div></div><!-- contentframe end -->  </div>
+  <!-- rightcol end -->
+</div>
+<!-- main end -->
+<div id="footer"><div class="space"></div>
+  <div class="footerline"></div>
+  <div class="strgl"><a href="index.php" title="Strona główna">Strona główna</a></div>
+  <div class="top"><a href="#top">do góry</a></div>
+  <div class="space"></div>
+</div>
+<!-- footer end-->
+</body>
+</html>

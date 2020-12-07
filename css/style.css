@@ -1,0 +1,210 @@
+@charset "utf-8";
+/* CSS Document */
+@import url(https://fonts.googleapis.com/css?family=Titillium+Web:400,700,400italic&subset=latin,latin-ext);
+body {
+  background-color: #F4F4F4;
+  font-family: 'Titillium Web', sans-serif;
+  font-size: 16px;
+  padding-top: 50px;
+}
+#cookie-div {
+  background-color: navy;
+  bottom: 0;
+  color: #FFF;
+  padding: 15px;
+  position: fixed;
+  width: 100%;
+  z-index: 10;
+}
+#cookie-div div,
+#cookie-div span {
+  color: #FFF;
+}
+header #blueprint {
+  background-image: url('../images/background-projob-blueprint.png');
+  border-bottom: 1px solid silver;
+  height: 80px;
+}
+header .navbar-fixed-top {
+  background: #F7DA00 none;
+  border-bottom: 1px solid #C9B00C;
+}
+header .navbar-fixed-top .navbar-brand {
+  padding: 0px;
+}
+header .navbar-fixed-top .navbar-brand img {
+  max-height: 50px;
+}
+header .navbar-fixed-top .navbar-collapse ul li a {
+  color: #000;
+}
+header .navbar-fixed-top .navbar-collapse ul li.mega-dropdown {
+  position: static !important;
+}
+header .navbar-fixed-top .navbar-collapse ul li.mega-dropdown .mega-dropdown-menu {
+  padding: 20px 0px;
+  width: 100%;
+  box-shadow: none;
+  -webkit-box-shadow: none;
+}
+header .navbar-fixed-top .navbar-collapse ul li.mega-dropdown .mega-dropdown-menu .fa {
+  color: silver;
+  font-size: 20px;
+}
+header .navbar-fixed-top .navbar-collapse ul li.mega-dropdown .mega-dropdown-menu > li > ul {
+  padding: 0;
+  margin: 0;
+}
+header .navbar-fixed-top .navbar-collapse ul li.mega-dropdown .mega-dropdown-menu > li > ul > li {
+  list-style: none;
+}
+header .navbar-fixed-top .navbar-collapse ul li.mega-dropdown .mega-dropdown-menu > li > ul > li > a {
+  display: block;
+  color: #004289;
+  font-size: 16px;
+  padding: 3px 5px;
+}
+header .navbar-fixed-top .navbar-collapse ul li.mega-dropdown .mega-dropdown-menu > li ul > li > a:hover,
+header .navbar-fixed-top .navbar-collapse ul li.mega-dropdown .mega-dropdown-menu > li ul > li > a:focus {
+  text-decoration: none;
+}
+header .navbar-fixed-top .navbar-collapse ul li.mega-dropdown .mega-dropdown-menu .dropdown-header {
+  font-size: 22px;
+  color: #ff3546;
+  padding: 5px 60px 5px 5px;
+  line-height: 30px;
+}
+header .navbar-fixed-top .navbar-collapse .navbar-form .typeahead {
+  right: 0px;
+  margin-left: -244px;
+  min-width: 450px;
+}
+header .navbar-fixed-top .navbar-collapse .navbar-form .typeahead li a:hover {
+  background-color: #004890;
+  color: #FFF;
+}
+.breadcrumb-outer {
+  background-color: #fff;
+}
+.breadcrumb-outer .breadcrumb {
+  background-color: #FFF;
+  margin-top: 15px;
+}
+footer #brands {
+  background-color: #262626;
+  margin-top: 40px;
+  padding: 40px 0;
+}
+footer #brands a {
+  padding: 0px 30px;
+}
+footer #brands a img {
+  opacity: 0.4;
+  filter: alpha(opacity=40);
+  /* For IE8 and earlier */
+  transition: 0.5s ease-out;
+}
+footer #brands a img:hover {
+  opacity: 1;
+  filter: alpha(opacity=100);
+  /* For IE8 and earlier */
+}
+footer #companies {
+  background-color: #202020;
+  padding: 30px 0;
+}
+footer #companies div,
+footer #companies p,
+footer #companies a {
+  color: silver;
+  font-size: .9em;
+}
+#product-list .product {
+  padding-left: 5px;
+  padding-right: 5px;
+}
+#product-list .product .inner {
+  -webkit-box-shadow: 1px 1px 3px 1px rgba(0, 0, 0, 0.05);
+  -moz-box-shadow: 1px 1px 3px 1px rgba(0, 0, 0, 0.05);
+  box-shadow: 1px 1px 3px 1px rgba(0, 0, 0, 0.05);
+  background-color: #FFF;
+  border: 1px solid silver;
+  margin: 15px 0px;
+  height: 440px;
+  padding: 20px;
+  position: relative;
+  transition: 0.4s ease-in-out;
+}
+#product-list .product .inner:hover {
+  -webkit-box-shadow: 1px 1px 3px 1px rgba(0, 0, 0, 0.3);
+  -moz-box-shadow: 1px 1px 3px 1px rgba(0, 0, 0, 0.3);
+  box-shadow: 1px 1px 3px 1px rgba(0, 0, 0, 0.3);
+}
+#product-list .product .inner .description {
+  min-height: 60px;
+}
+#product-list .product .inner .description h2,
+#product-list .product .inner .description h2 a,
+#product-list .product .inner .description h3,
+#product-list .product .inner .description h3 a {
+  color: #000;
+  font-size: 22px;
+  margin: 0px;
+  text-align: center;
+}
+#product-list .product .inner .description .extra {
+  display: none;
+  transition: all 0.4s ease-in;
+}
+#product-list .product .inner .img-responsive {
+  margin: 0 auto;
+}
+#product-list .product .inner:hover .extra {
+  display: block;
+}
+#product-list .product .inner .nr-kat {
+  color: silver;
+}
+#produkt {
+  background-color: #FFF;
+  border: 1px solid silver;
+  margin-top: 20px;
+  padding-top: 15px;
+}
+#produkt #produkt-stan {
+  margin-top: 20px;
+}
+#produkt #zdjecie-big .img-responsive {
+  margin: 0 auto;
+}
+#produkt #zdjecie-kolory .col-sm-4,
+#produkt #zdjecie-detale .col-sm-4 {
+  padding-bottom: 10px;
+  padding-top: 10px;
+}
+#produkt #zdjecie-kolory .col-sm-4 img,
+#produkt #zdjecie-detale .col-sm-4 img {
+  cursor: pointer;
+}
+#produkt #tresci .nr-kat {
+  color: silver;
+  font-size: 14px;
+}
+#produkt #tresci .opis {
+  font-size: 16px;
+  line-height: 26px;
+}
+#produkt #tresci .opis * {
+  font-size: 16px;
+  line-height: 26px;
+}
+#strona {
+  background-color: #FFF;
+  border: 1px solid silver;
+  margin-top: 20px;
+  padding-top: 25px;
+}
+#strona ul,
+#strona ol {
+  margin-left: 20px;
+}
